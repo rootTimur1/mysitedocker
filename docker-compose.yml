@@ -1,0 +1,7 @@
+services:
+  hello-site:
+    build: .
+    container_name: hello-site
+    ports:
+      - "8080:80"
+    restart: unless-stopped
